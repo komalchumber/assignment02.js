@@ -1,0 +1,53 @@
+/* gallery.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    background-image: url(https://4kwallpapers.com/images/walls/thumbs_2t/8324.png);
+    /* background-color: black; */
+    color: goldenrod;
+    font-family: cursive;
+    font-size: 28px;
+    /* text-shadow: 0 0 10px rgba(89, 148, 244, 0.8); */
+}
+
+h1 {
+    text-align: center;
+    border: white dotted;
+    border-radius: 10px;
+    margin: 40px;
+    box-shadow: 0 0 20px yellow;
+}
+
+section {
+    text-align: center;
+}
+
+figure {
+    padding-top: 30px;
+    border: rgb(245, 245, 245) solid;
+    box-shadow: 0 0 15px rgba(188, 242, 94, 0.8);
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    padding: 8px;
+    cursor: pointer;
+}
+
+/*Add grayscale filter to inactive thumbnails */
+li img {
+    filter: grayscale(100%);
+    border: white solid;
+    box-shadow: 0 0 10px rgba(94, 168, 242, 0.8);
+}
+
+/* Remove grayscale filter on active thumbnail */
+li img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.2);
+}
